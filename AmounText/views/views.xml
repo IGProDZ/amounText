@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="currency_form_view_litteral">
+			<field name="name">litterral.curency</field>
+			<field name="model">res.currency</field>
+			<field name="inherit_id" ref="base.view_currency_form"/>
+			<field name="arch" type="xml">
+        		<xpath expr="//field[@name='symbol']" position="after">
+          			<field name="litteral_name" string="Nom complet"/>
+        		</xpath>
+			</field>
+		</record>
+	</data>
+</openerp>
